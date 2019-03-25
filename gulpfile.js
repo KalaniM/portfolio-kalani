@@ -10,7 +10,7 @@ var imagemin = require('gulp-imagemin');
 
 // HTML Task
 gulp.task("html", () => {
-    gulp.src('./src/**/*.html')
+    return gulp.src('./src/**/*.html')
     .pipe(gulp.dest('dist'))
     .pipe(connect.reload())
 })
@@ -71,3 +71,6 @@ gulp.task("sass", function() {
 
     // Default task
     gulp.task("default", gulp.parallel("connect","sass", "js", "watch", "assets", "image", "html"));
+
+    // Build task
+    gulp.task("build", gulp.parallel("html", "js", "sass", "image", "assets"))
