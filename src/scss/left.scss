@@ -1,0 +1,32 @@
+.contact {
+    display: flex;
+    opacity: .6;
+
+    &__link {
+        height: 150px;
+    }
+
+    &__infos {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 18px;
+        max-width: 30vw;
+        margin-top: 12px;
+        
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+        & a:nth-child(1) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.middle {
+    background-color: gold;
+    width: 20vw;
+    margin-left: 15vw;
+}
