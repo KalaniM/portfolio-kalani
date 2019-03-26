@@ -55,6 +55,7 @@ nav.forEach(link => {
         portfolio.display(link.innerHTML.toLowerCase())
         document.querySelector('li.active').classList.remove('active')
         link.classList.add('active')
+        document.querySelector('.background').scrollTop = 10
     })
 })
 
