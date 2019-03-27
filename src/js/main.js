@@ -54,41 +54,52 @@ class Display {
             }
           });
 
-          let date = document.createElement("p");
-          date.innerHTML = screen.date;
-          date.classList.add("project__date");
-          document.querySelector(".active").appendChild(date);
-
-          let project_description = document.createElement("p");
-          project_description.innerHTML = screen.description;
-          project_description.classList.add("project__description");
-
           let middle = document.querySelector(".middle");
-          middle.appendChild(project_description);
-          middle.classList.add("large");
-
+          let date = document.createElement("p");
+          let project_description = document.createElement("p");
           let backArrow = document.createElement("img");
-          backArrow.setAttribute("src", "../assets/images/HorizontalLine.png");
+
+          date.innerHTML = screen.date;
+          project_description.innerHTML = screen.description;
+
+          date.classList.add("project__date");
+          project_description.classList.add("project__description");
+          middle.classList.add("large");
           backArrow.classList.add("back");
+
+          backArrow.setAttribute("src", "../assets/images/HorizontalLine.png");
+
+          document.querySelector(".active").appendChild(date);
+          middle.appendChild(project_description);
           document.querySelector(".left").appendChild(backArrow);
         }
       }
     };
 
     this.getProjects = () => {
-      document
-        .querySelector(".left")
-        .removeChild(document.querySelector(".back"));
+      // Parent nodes
+      let left = document.querySelector(".left");
+      let middle = document.querySelector(".middle");
+      let li = document.querySelector(".highlighted");
+
+      // Elements to delete
       let lis = document.querySelectorAll(".projects__project");
+      let description = document.querySelector(".project__description");
+      let back = document.querySelector(".back");
+
+      // Remove elements
+      li.removeChild(document.querySelector(".project__date"));
+      middle.removeChild(description);
+      left.removeChild(back);
+
+      // Bring back the menu
       lis.forEach(li => {
         li.style.transform = "translateY(0px)";
       });
-      let li = document.querySelector(".highlighted");
-      li.removeChild(document.querySelector(".project__date"));
 
-      document
-        .querySelector(".middle")
-        .removeChild(document.querySelector(".project__description"));
+      // Remove classes
+      middle.classList.remove("large");
+      li.classList.remove("highlighted");
     };
   }
 }
@@ -152,13 +163,14 @@ nav.forEach(link => {
     link.classList.add("active");
     document.querySelector(".background").scrollTop = 10;
   });
+
+  // On click, displays the project infos on left section
   link.addEventListener("click", () => {
     portfolio.getPage(link.innerHTML.toLowerCase());
-    setTimeout(() => {
-      let backArrow = document.querySelector(".back");
-      backArrow.addEventListener("click", () => {
-        portfolio.getProjects();
-      });
-    }, 100);
+    
+    let backArrow = document.querySelector(".back");
+    backArrow.addEventListener("click", () => {
+      portfolio.getProjects();
+    });
   });
 });
