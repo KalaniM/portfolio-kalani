@@ -109,7 +109,7 @@ class Display {
 let nespresso = new Screen(
   "nespresso",
   "./assets/images/nespresso.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  '<div class="squares"><div style="background-color:teal;" class="squares__square"></div><div style="background-color:teal;" class="squares__square"></div><div style="background-color:teal;" class="squares__square"></div></div><p>À l\'instar du vin, notre produit possède un élégant registre de termes et expressions associés à sa dégustation.</p><p class="bold">Boisé, équilibré, corsé, doux, fruité, brulé, intense, rond…</p><p>Ces attributs aux noms évocateurs inspirent les consommateurs et sont la clef d’un moment privilégié adapté à chaque palais.</p>',
   "Décembre 2018"
 );
 let dassault = new Screen(
@@ -161,16 +161,22 @@ nav.forEach(link => {
     portfolio.display(link.innerHTML.toLowerCase());
     document.querySelector("li.active").classList.remove("active");
     link.classList.add("active");
-    document.querySelector(".background").scrollTop = 10;
+    document.querySelector(".background").scrollTop = 0;
   });
 
   // On click, displays the project infos on left section
   link.addEventListener("click", () => {
     portfolio.getPage(link.innerHTML.toLowerCase());
-    
+
     let backArrow = document.querySelector(".back");
     backArrow.addEventListener("click", () => {
       portfolio.getProjects();
     });
   });
 });
+
+
+/*
+TODO: crop le bas des pages pour éviter le petit espace blanc
+*/
+// TODO: scrollTop qui ne fonctionne toujours pas
