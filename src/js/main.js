@@ -34,6 +34,7 @@ class Display {
     this.refreshScreen = () => {
       let rightImage = document.querySelector(".right .background img");
       rightImage.setAttribute("src", this.currentScreen.link);
+      document.querySelector(".right").scrollTop = 0;
     };
 
     this.getPage = screenName => {
@@ -161,7 +162,6 @@ nav.forEach(link => {
     portfolio.display(link.innerHTML.toLowerCase());
     document.querySelector("li.active").classList.remove("active");
     link.classList.add("active");
-    document.querySelector(".background").scrollTop = 0;
   });
 
   // On click, displays the project infos on left section
@@ -176,7 +176,8 @@ nav.forEach(link => {
 });
 
 
-/*
-TODO: crop le bas des pages pour éviter le petit espace blanc
-*/
 // TODO: scrollTop qui ne fonctionne toujours pas
+
+
+
+
