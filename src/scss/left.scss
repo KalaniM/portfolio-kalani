@@ -65,11 +65,13 @@
     }
 
     li {
+    font-family: 'Noto Sans';
         font-size: 20px;
         margin-bottom: 5vh;
         cursor: pointer;
         position: relative;
         transition: all .3s;
+        transition: transform 1s;
 
         
         &:hover {
