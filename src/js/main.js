@@ -109,7 +109,7 @@ class Display {
 let nespresso = new Screen(
   "nespresso",
   "./assets/images/nespresso.jpg",
-  '<div class="squares"><div style="background-color:teal;" class="squares__square"></div><div style="background-color:teal;" class="squares__square"></div><div style="background-color:teal;" class="squares__square"></div></div><p>À l\'instar du vin, notre produit possède un élégant registre de termes et expressions associés à sa dégustation.</p><p class="bold">Boisé, équilibré, corsé, doux, fruité, brulé, intense, rond…</p><p>Ces attributs aux noms évocateurs inspirent les consommateurs et sont la clef d’un moment privilégié adapté à chaque palais.</p>',
+  '<div class="squares"><div style="background-color:#003391;" class="squares__square"></div><div style="background-color:#1B1B1B;" class="squares__square"></div><div style="background-color:#D7BF5B;" class="squares__square"></div></div><p>À l\'instar du vin, notre produit possède un élégant registre de termes et expressions associés à sa dégustation.</p><p class="bold">Boisé, équilibré, corsé, doux, fruité, brulé, intense, rond…</p><p>Ces attributs aux noms évocateurs inspirent les consommateurs et sont la clef d’un moment privilégié adapté à chaque palais.</p>',
   "Décembre 2018"
 );
 let dassault = new Screen(
