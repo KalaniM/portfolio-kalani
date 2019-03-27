@@ -54,40 +54,42 @@ class Display {
             }
           });
 
-
           let date = document.createElement("p");
           date.innerHTML = screen.date;
-          date.classList.add('project__date');
+          date.classList.add("project__date");
           document.querySelector(".active").appendChild(date);
 
           let project_description = document.createElement("p");
           project_description.innerHTML = screen.description;
-          project_description.classList.add('project__description');
-          
-          let middle = document.querySelector(".middle")
+          project_description.classList.add("project__description");
+
+          let middle = document.querySelector(".middle");
           middle.appendChild(project_description);
-          middle.classList.add('large')
+          middle.classList.add("large");
 
-          let backArrow = document.createElement('img')
-          backArrow.setAttribute('src', '../assets/images/HorizontalLine.png')
-          backArrow.classList.add('back')
-          document.querySelector('.left').appendChild(backArrow)
-
+          let backArrow = document.createElement("img");
+          backArrow.setAttribute("src", "../assets/images/HorizontalLine.png");
+          backArrow.classList.add("back");
+          document.querySelector(".left").appendChild(backArrow);
         }
       }
     };
 
     this.getProjects = () => {
-      document.querySelector('.left').removeChild(document.querySelector('.back'))
-      let lis = document.querySelectorAll('.projects__project')
+      document
+        .querySelector(".left")
+        .removeChild(document.querySelector(".back"));
+      let lis = document.querySelectorAll(".projects__project");
       lis.forEach(li => {
-        li.style.transform = 'translateY(0px)';
-      })
-      let li = document.querySelector('.highlighted')
-      li.removeChild(document.querySelector('.project__date'))
+        li.style.transform = "translateY(0px)";
+      });
+      let li = document.querySelector(".highlighted");
+      li.removeChild(document.querySelector(".project__date"));
 
-      document.querySelector('.middle').removeChild(document.querySelector('.project__description'))
-    }
+      document
+        .querySelector(".middle")
+        .removeChild(document.querySelector(".project__description"));
+    };
   }
 }
 
@@ -152,9 +154,11 @@ nav.forEach(link => {
   });
   link.addEventListener("click", () => {
     portfolio.getPage(link.innerHTML.toLowerCase());
-    let backArrow = document.querySelector('.back')
-    backArrow.addEventListener('click', () => {
-      portfolio.getProjects();
-    })
+    setTimeout(() => {
+      let backArrow = document.querySelector(".back");
+      backArrow.addEventListener("click", () => {
+        portfolio.getProjects();
+      });
+    }, 100);
   });
 });
