@@ -53,6 +53,10 @@ class Display {
               li.style.transform = "translateX(-1000px)";
             }
           });
+          let date = document.createElement("p");
+          date.innerHTML = screen.date;
+          date.classList.add('project__date')
+          document.querySelector(".active").appendChild(date);
         }
       }
     };
@@ -64,24 +68,38 @@ class Display {
 let nespresso = new Screen(
   "nespresso",
   "./assets/images/nespresso.jpg",
-  "lorem"
+  "lorem",
+  "Décembre 2018"
 );
-let dassault = new Screen("dassault", "./assets/images/dassault.jpg", "lorem");
+let dassault = new Screen(
+  "dassault",
+  "./assets/images/dassault.jpg",
+  "lorem",
+  "Novembre 2018"
+);
 let powerpoint = new Screen(
   "templating powerpoint",
   "./assets/images/powerpoint.jpg",
-  "lorem"
+  "lorem",
+  "Janvier 2019"
 );
 let socomptoir = new Screen(
   "so comptoir",
   "./assets/images/socomptoir.jpg",
-  "lorem"
+  "lorem",
+  "Janvier 2019"
 );
-let tothetop = new Screen("tothetop", "./assets/images/tothetop.png", "lorem");
+let tothetop = new Screen(
+  "tothetop",
+  "./assets/images/tothetop.png",
+  "lorem",
+  "Décembre 2018"
+);
 let galbobain = new Screen(
   "galbobain",
   "./assets/images/galbobain.jpg",
-  "lorem"
+  "lorem",
+  "Février 2019"
 );
 
 // The display is the portfolio, and we just have a set of screens to display
