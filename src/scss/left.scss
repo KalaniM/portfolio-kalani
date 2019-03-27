@@ -103,6 +103,15 @@
         transform: translateY(40px);
     }
 }
+@keyframes appearDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+        transform: translateY(-300px);
+    }
+}
 
 .project__date {
     transition: all 1s;
@@ -111,3 +120,12 @@
     animation: appear 1s linear forwards;
 }
 
+.project__description {
+    transition: all 1s;
+    opacity: 0;
+    font-size: 16px;
+    animation: appearDown 1s linear forwards;
+}
+.middle.large {
+    width: 35vw;
+}

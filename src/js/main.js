@@ -53,10 +53,21 @@ class Display {
               li.style.transform = "translateX(-1000px)";
             }
           });
+
+
           let date = document.createElement("p");
           date.innerHTML = screen.date;
-          date.classList.add('project__date')
+          date.classList.add('project__date');
           document.querySelector(".active").appendChild(date);
+
+          let project_description = document.createElement("p");
+          project_description.innerHTML = screen.description;
+          project_description.classList.add('project__description');
+          
+          let middle = document.querySelector(".middle")
+          middle.appendChild(project_description);
+          middle.classList.add('large')
+
         }
       }
     };
@@ -68,37 +79,37 @@ class Display {
 let nespresso = new Screen(
   "nespresso",
   "./assets/images/nespresso.jpg",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Décembre 2018"
 );
 let dassault = new Screen(
   "dassault",
   "./assets/images/dassault.jpg",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Novembre 2018"
 );
 let powerpoint = new Screen(
   "templating powerpoint",
   "./assets/images/powerpoint.jpg",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
 let socomptoir = new Screen(
   "so comptoir",
   "./assets/images/socomptoir.jpg",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
 let tothetop = new Screen(
   "tothetop",
   "./assets/images/tothetop.png",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Décembre 2018"
 );
 let galbobain = new Screen(
   "galbobain",
   "./assets/images/galbobain.jpg",
-  "lorem",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Février 2019"
 );
 
