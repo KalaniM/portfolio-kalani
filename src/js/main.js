@@ -68,9 +68,26 @@ class Display {
           middle.appendChild(project_description);
           middle.classList.add('large')
 
+          let backArrow = document.createElement('img')
+          backArrow.setAttribute('src', '../assets/images/HorizontalLine.png')
+          backArrow.classList.add('back')
+          document.querySelector('.left').appendChild(backArrow)
+
         }
       }
     };
+
+    this.getProjects = () => {
+      document.querySelector('.left').removeChild(document.querySelector('.back'))
+      let lis = document.querySelectorAll('.projects__project')
+      lis.forEach(li => {
+        li.style.transform = 'translateY(0px)';
+      })
+      let li = document.querySelector('.highlighted')
+      li.removeChild(document.querySelector('.project__date'))
+
+      document.querySelector('.middle').removeChild(document.querySelector('.project__description'))
+    }
   }
 }
 
@@ -135,5 +152,9 @@ nav.forEach(link => {
   });
   link.addEventListener("click", () => {
     portfolio.getPage(link.innerHTML.toLowerCase());
+    let backArrow = document.querySelector('.back')
+    backArrow.addEventListener('click', () => {
+      portfolio.getProjects();
+    })
   });
 });
