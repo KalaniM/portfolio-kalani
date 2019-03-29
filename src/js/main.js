@@ -1,3 +1,55 @@
+
+// Mobile handling
+function detectmob() {
+  if(window.innerWidth <= 600) {
+    return true;
+  } else {
+    return false;
+  }
+}
+if(detectmob()) {
+  let body = document.querySelector('body')
+  body.innerHTML = ''
+
+  let title = document.createElement('h1')
+  title.innerHTML = 'Kalani'
+  title.classList.add('title')
+  body.appendChild(title)
+
+  let instruction = document.createElement('p')
+  instruction.innerHTML = 'Projets disponibles en version desktop'
+  instruction.classList.add('instruction')
+  body.appendChild(instruction)
+
+  let a = document.createElement('a')
+  a.setAttribute('href', 'https://www.instagram.com/kalakalanim/')
+  a.setAttribute('target', '_blank')
+  a.classList.add('qr__link')
+  body.appendChild(a)
+
+  let qrcode = document.createElement('img')
+  qrcode.setAttribute('src', './assets/images/QRCodeInsta.png')
+  qrcode.classList.add('qrcode')
+  a.appendChild(qrcode)
+
+  let email = document.createElement('a')
+  email.setAttribute('href', 'mailto:kalakalanicontact@gmail.com')
+  email.innerHTML = 'kalakalanicontact@gmail.com'
+  email.classList.add('email')
+  body.appendChild(email)
+
+  let phone = document.createElement('a')
+  phone.setAttribute('href', 'tel:+33631747414')
+  phone.innerHTML = '06 31 74 74 14'
+  phone.classList.add('phone')
+  body.appendChild(phone)
+
+}
+
+// ---------------------------------------------------------------------------
+
+
+
 /**
  * * This class is used to handle which screen to display on the portfolio
  * @param name The name of the screen you want to create
@@ -180,4 +232,5 @@ nav.forEach(link => {
     }, 1100);
   });
 });
+
 
