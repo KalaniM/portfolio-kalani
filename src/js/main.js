@@ -54,25 +54,29 @@ class Display {
               li.style.transform = "translateX(-1000px)";
             }
           });
+          setTimeout(() => {
+            let middle = document.querySelector(".middle");
+            let date = document.createElement("p");
+            let project_description = document.createElement("p");
+            let backArrow = document.createElement("img");
 
-          let middle = document.querySelector(".middle");
-          let date = document.createElement("p");
-          let project_description = document.createElement("p");
-          let backArrow = document.createElement("img");
+            date.innerHTML = screen.date;
+            project_description.innerHTML = screen.description;
 
-          date.innerHTML = screen.date;
-          project_description.innerHTML = screen.description;
+            date.classList.add("project__date");
+            project_description.classList.add("project__description");
+            middle.classList.add("large");
+            backArrow.classList.add("back");
 
-          date.classList.add("project__date");
-          project_description.classList.add("project__description");
-          middle.classList.add("large");
-          backArrow.classList.add("back");
+            backArrow.setAttribute(
+              "src",
+              "../assets/images/HorizontalLine.png"
+            );
 
-          backArrow.setAttribute("src", "../assets/images/HorizontalLine.png");
-
-          document.querySelector(".active").appendChild(date);
-          middle.appendChild(project_description);
-          document.querySelector(".left").appendChild(backArrow);
+            document.querySelector(".active").appendChild(date);
+            middle.appendChild(project_description);
+            document.querySelector(".left").appendChild(backArrow);
+          }, 1000);
         }
       }
     };
@@ -168,16 +172,12 @@ nav.forEach(link => {
   link.addEventListener("click", () => {
     portfolio.getPage(link.innerHTML.toLowerCase());
 
-    let backArrow = document.querySelector(".back");
+    setTimeout(() => {
+      let backArrow = document.querySelector(".back");
     backArrow.addEventListener("click", () => {
       portfolio.getProjects();
     });
+    }, 1100);
   });
 });
-
-
-// TODO: scrollTop qui ne fonctionne toujours pas
-
-
-
 

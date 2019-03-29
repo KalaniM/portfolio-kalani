@@ -102,13 +102,14 @@
     transform: translateY(30px);
   }
 }
-@keyframes appearDown {
+@keyframes appearLeft {
   0% {
     opacity: 0;
+    transform: translate(-1000px,-300px);
   }
   100% {
     opacity: 100;
-    transform: translateY(-300px);
+    transform: translate(0px,-300px);
   }
 }
 
@@ -123,8 +124,8 @@
   transition: all 1s;
   opacity: 0;
   font-size: 16px;
-  animation: appearDown 1s linear forwards;
-
+  animation: appearLeft 1s ease-in-out forwards;
+  width: 30vw;
   .squares {
     display: flex;
 
