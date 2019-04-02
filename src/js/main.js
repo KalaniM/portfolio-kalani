@@ -184,31 +184,31 @@ let nespresso = new Screen(
 );
 let dassault = new Screen(
   "dassault",
-  "./assets/images/dassault.jpg",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/dassault.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Novembre 2018"
 );
 let powerpoint = new Screen(
   "templating powerpoint",
-  "./assets/images/powerpoint.jpg",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/powerpoint.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
 let socomptoir = new Screen(
   "so comptoir",
-  "./assets/images/socomptoir.jpg",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/socomptoir.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
 let tothetop = new Screen(
   "tothetop",
-  "./assets/images/tothetop.png",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/tothetop.png",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Décembre 2018"
 );
 let galbobain = new Screen(
   "galbobain",
-  "./assets/images/galbobain.jpg",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/galbobain.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Février 2019"
 );
