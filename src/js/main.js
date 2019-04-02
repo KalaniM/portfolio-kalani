@@ -95,7 +95,6 @@ class Display {
           this.refreshScreen();
         }
       }
-      observer.observe();
     };
     this.refreshScreen = () => {
       let rightImage = document.querySelector(".right .background img");
