@@ -1,5 +1,4 @@
 // Imports 
-import lozad from 'lozad';
 const el = document.querySelector('img');
 const observer = lozad(el);
 observer.observe();

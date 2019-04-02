@@ -30,7 +30,7 @@ gulp.task("sass", function() {
     gulp.task("js", function() {
     return gulp
         .src("./src/js/**/*.js")        // takes all js files in /js 
-        .pipe(uglify())                 // minimize it
+        //.pipe(uglify())                 // minimize it
         .pipe(gulp.dest("./dist/js"))   // send it to dist/js
         .pipe(connect.reload());        // reload the browser server
     });
