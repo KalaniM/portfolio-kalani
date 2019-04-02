@@ -1,5 +1,6 @@
 // Imports 
-import lozad from 'lozad'
+var lozad = require('lozad')
+const observer = lozad();
 observer.observe();
 
 
