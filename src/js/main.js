@@ -1,8 +1,8 @@
 // Imports 
 import lozad from 'lozad';
-const observer = lozad();
+const el = document.querySelector('img');
+const observer = lozad(el);
 observer.observe();
-
 
 // Mobile handling
 var isMobile = {
