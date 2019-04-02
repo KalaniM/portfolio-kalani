@@ -202,7 +202,7 @@ let socomptoir = new Screen(
 );
 let tothetop = new Screen(
   "tothetop",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/tothetop.png",
+  "./assets/images/tothetop.png",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Décembre 2018"
 );
