@@ -41,7 +41,7 @@ if(isMobile.any()) {
   body.appendChild(a)
 
   let qrcode = document.createElement('img')
-  qrcode.setAttribute('src', './assets/images/QRCodeInsta.png')
+  qrcode.setAttribute('src', './assets/images/qrcode.svg')
   qrcode.classList.add('qrcode')
   a.appendChild(qrcode)
 
