@@ -4,4 +4,16 @@
         width: 50vw;
         display: block;
     }
+    .gallery {
+        display: none;
+    }
+}
+
+.right.gallery {
+    .background {
+        display: none;
+    }
+    .gallery {
+        display: block;
+    }
 }

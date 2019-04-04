@@ -92,11 +92,18 @@ class Display {
         const screen = this.screens[i];
         if (screen.name === screenName) {
           this.currentScreen = screens[i];
-          this.refreshScreen();
+          if(screen.name === "dessins et peintures") {
+            this.gallery();
+          } else this.refreshScreen();
         }
       }
     };
+    this.gallery = () => {
+      let right = document.querySelector('.right');
+      right.classList.add('gallery');
+    }
     this.refreshScreen = () => {
+      document.querySelector('.right').classList.remove('gallery');
       let rightImage = document.querySelector(".right .background img");
       rightImage.setAttribute("src", this.currentScreen.link);
       document.querySelector(".right").scrollTop = 0;
@@ -212,6 +219,12 @@ let galbobain = new Screen(
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Février 2019"
 );
+let gallery = new Screen(
+  "dessins et peintures",
+  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/galbobain.jpg",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  ""
+);
 
 // The display is the portfolio, and we just have a set of screens to display
 let portfolio = new Display([
@@ -220,7 +233,8 @@ let portfolio = new Display([
   powerpoint,
   socomptoir,
   tothetop,
-  galbobain
+  galbobain,
+  gallery
 ]);
 
 // Selects the nav and handles screen changes
