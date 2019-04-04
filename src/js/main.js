@@ -185,25 +185,25 @@ class Display {
 
 let nespresso = new Screen(
   "nespresso",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/nespresso.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/nespresso.jpg",
   '<div class="squares"><div style="background-color:#003391;" class="squares__square"></div><div style="background-color:#1B1B1B;" class="squares__square"></div><div style="background-color:#D7BF5B;" class="squares__square"></div></div><p>À l\'instar du vin, notre produit possède un élégant registre de termes et expressions associés à sa dégustation.</p><p class="bold">Boisé, équilibré, corsé, doux, fruité, brulé, intense, rond…</p><p>Ces attributs aux noms évocateurs inspirent les consommateurs et sont la clef d’un moment privilégié adapté à chaque palais.</p>',
   "Décembre 2018"
 );
 let dassault = new Screen(
   "dassault",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/dassault.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/dassault.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Novembre 2018"
 );
 let powerpoint = new Screen(
   "templating powerpoint",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/powerpoint.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/powerpoint.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
 let socomptoir = new Screen(
   "so comptoir",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/socomptoir.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/socomptoir.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Janvier 2019"
 );
@@ -215,13 +215,13 @@ let tothetop = new Screen(
 );
 let galbobain = new Screen(
   "galbobain",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/galbobain.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   "Février 2019"
 );
 let gallery = new Screen(
   "dessins et peintures",
-  "https://presentationism-hon.000webhostapp.com/index.php///kalani-marquand.netlify.com/assets/images/galbobain.jpg",
+  "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
   ""
 );
