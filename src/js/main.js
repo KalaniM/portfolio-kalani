@@ -104,10 +104,13 @@ class Display {
       right.classList.add('gallery');
     }
     this.refreshScreen = () => {
-      document.querySelector('.right').classList.remove('gallery');
+      let right = document.querySelector('.right');
+      right.classList.remove('gallery');
       let rightImage = document.querySelector(".right .background img");
       rightImage.setAttribute("src", this.currentScreen.link);
       document.querySelector(".right").scrollTop = 0;
+
+      right.querySelector('img.arrow').setAttribute('src','../assets/images/' + this.currentScreen.arrowColor + 'Arrow.png')
     };
 
     this.getPage = screenName => {

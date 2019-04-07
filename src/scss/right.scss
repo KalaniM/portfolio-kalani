@@ -1,11 +1,16 @@
 .right {
     height: 100vh;
-    img {
+    img:not(.arrow) {
         width: 50vw;
         display: block;
     }
     .gallery {
         display: none;
+    }
+    .arrow {
+        position: fixed;
+        bottom: 3vh;
+        transform: scale(.7);
     }
 }
 
