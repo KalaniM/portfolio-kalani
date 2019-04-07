@@ -93,6 +93,7 @@ class Display {
         const screen = this.screens[i];
         if (screen.name === screenName) {
           this.currentScreen = screens[i];
+          document.querySelector('.right img.arrow').setAttribute('src','../assets/images/' + this.currentScreen.arrowColor + 'Arrow.png')
           if(screen.name === "dessins et peintures") {
             this.gallery();
           } else this.refreshScreen();
@@ -108,9 +109,8 @@ class Display {
       right.classList.remove('gallery');
       let rightImage = document.querySelector(".right .background img");
       rightImage.setAttribute("src", this.currentScreen.link);
-      document.querySelector(".right").scrollTop = 0;
+      right.scrollTop = 0;
 
-      right.querySelector('img.arrow').setAttribute('src','../assets/images/' + this.currentScreen.arrowColor + 'Arrow.png')
     };
 
     this.getPage = screenName => {
