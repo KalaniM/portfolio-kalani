@@ -70,11 +70,12 @@ if(isMobile.any()) {
  * @param description The html for the description part
  */
 class Screen {
-  constructor(name, link, description, date) {
+  constructor(name, link, description, date, arrowColor) {
     this.description = description;
     this.name = name;
     this.link = link;
     this.date = date;
+    this.arrowColor = arrowColor;
   }
 }
 
@@ -187,43 +188,50 @@ let nespresso = new Screen(
   "nespresso",
   "https://kalani-marquand.netlify.com/assets/images/nespresso.jpg",
   '<div class="squares"><div style="background-color:#003391;" class="squares__square"></div><div style="background-color:#1B1B1B;" class="squares__square"></div><div style="background-color:#D7BF5B;" class="squares__square"></div></div><p>À l\'instar du vin, notre produit possède un élégant registre de termes et expressions associés à sa dégustation.</p><p class="bold">Boisé, équilibré, corsé, doux, fruité, brulé, intense, rond…</p><p>Ces attributs aux noms évocateurs inspirent les consommateurs et sont la clef d’un moment privilégié adapté à chaque palais.</p>',
-  "Décembre 2018"
+  "Décembre 2018",
+  "white"
 );
 let dassault = new Screen(
   "dassault",
   "https://kalani-marquand.netlify.com/assets/images/dassault.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  "Novembre 2018"
+  "Novembre 2018",
+  "black"
 );
 let powerpoint = new Screen(
   "templating powerpoint",
   "https://kalani-marquand.netlify.com/assets/images/powerpoint.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  "Janvier 2019"
+  "Janvier 2019",
+  "black"
 );
 let socomptoir = new Screen(
   "so comptoir",
   "https://kalani-marquand.netlify.com/assets/images/socomptoir.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  "Janvier 2019"
+  "Janvier 2019",
+  "black"
 );
 let tothetop = new Screen(
   "tothetop",
   "./assets/images/tothetop.png",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  "Décembre 2018"
+  "Décembre 2018",
+  "black"
 );
 let galbobain = new Screen(
   "galbobain",
   "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  "Février 2019"
+  "Février 2019",
+  "black"
 );
 let gallery = new Screen(
   "dessins et peintures",
   "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
-  ""
+  "",
+  "white"
 );
 
 // The display is the portfolio, and we just have a set of screens to display
