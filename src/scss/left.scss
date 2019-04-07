@@ -102,14 +102,14 @@
     transform: translateY(30px);
   }
 }
-@keyframes appearLeft {
+@keyframes appearDown {
   0% {
     opacity: 0;
-    transform: translate(-1000px, -300px);
+    transform: translateY( -350px);
   }
   100% {
     opacity: 100;
-    transform: translate(0, -300px);
+    transform: translateY( -300px);
   }
 }
 
@@ -124,7 +124,8 @@
   transition: all 1s;
   opacity: 0;
   font-size: 16px;
-  animation: appearLeft .5s ease-in-out forwards;
+  transform: translate(0, -300px);
+  animation: appearDown 1s linear forwards;
   width: 30vw;
   .squares {
     display: flex;
@@ -138,7 +139,7 @@
   p {
     margin: 30px 0;
     font-size: 15px;
-    width: 30vw;
+    width: 24vw;
   }
   .bold {
     font-weight: bold;

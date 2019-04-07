@@ -136,7 +136,7 @@ class Display {
             project_description.innerHTML = screen.description;
 
             date.classList.add("project__date");
-            project_description.classList.add("project__description");
+            project_description.classList.add("project__description", "animated", "fadeInDown");
             middle.classList.add("large");
             backArrow.classList.add("back");
 
