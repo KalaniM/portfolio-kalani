@@ -9,9 +9,12 @@
     }
     .arrow {
         position: fixed;
+        left: 52vw;
         bottom: 3vh;
         transform: scale(.7);
         z-index: 1;
+
+        animation: jump 1s infinite alternate ease-in-out;
     }
 }
 
@@ -22,4 +25,23 @@
     .gallery {
         display: block;
     }
+}
+@keyframes disAppear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes jump {
+    0% {
+        transform: scale(.7) translateY(-20px);
+    }
+    100% {
+        transform: scale(.7) translateY(0px);
+    }
+}
+.arrow.hidden {
+    animation: disAppear .5s ease-in-out forwards;
 }

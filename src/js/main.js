@@ -270,5 +270,8 @@ nav.forEach(link => {
     }, 1100);
   });
 });
-
-
+let right = document.querySelector('.right')
+let arrow = document.querySelector('img.arrow')
+right.addEventListener('scroll', () => {
+  right.scrollTop > 300 ? arrow.classList.add('hidden') : arrow.classList.remove('hidden')
+})
