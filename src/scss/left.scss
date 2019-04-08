@@ -10,13 +10,11 @@
     flex-direction: column;
   }
   .info {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: relative;
     margin-left: 2vw;
-    &:nth-child(1) a {
-      top: 5px;
-      position: absolute;
-    }
+    display: flex;
+    align-items: center;
     a {
       color: darkgray;
       text-decoration: none;
