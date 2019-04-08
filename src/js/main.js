@@ -49,7 +49,7 @@ if (isMobile.any()) {
   body.appendChild(a);
 
   let qrcode = document.createElement("img");
-  qrcode.setAttribute("src", "./assets/images/qrcode.svg");
+  qrcode.setAttribute("src", "./assets/icons/logoInstaBig.svg");
   qrcode.classList.add("qrcode");
   a.appendChild(qrcode);
 
@@ -64,6 +64,12 @@ if (isMobile.any()) {
   phone.innerHTML = "06 31 74 74 14";
   phone.classList.add("phone");
   body.appendChild(phone);
+
+  let github = document.createElement("a");
+  github.setAttribute("href", "https://github.com/KalaniM?tab=stars");
+  github.innerHTML = "KalaniM";
+  github.classList.add("github");
+  body.appendChild(github);
 } else {
   /**
    * * This class is used to handle which screen to display on the portfolio
