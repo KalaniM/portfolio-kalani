@@ -20,6 +20,10 @@
     a {
       color: darkgray;
       text-decoration: none;
+
+      &:hover {
+        color: blue;
+      }
     }
   }
 
