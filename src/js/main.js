@@ -197,42 +197,42 @@ let nespresso = new Screen(
 let dassault = new Screen(
   "dassault",
   "https://kalani-marquand.netlify.com/assets/images/dassault.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "Novembre 2018",
   "black"
 );
 let powerpoint = new Screen(
   "templating powerpoint",
   "https://kalani-marquand.netlify.com/assets/images/powerpoint.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "Janvier 2019",
   "black"
 );
 let socomptoir = new Screen(
   "so comptoir",
   "https://kalani-marquand.netlify.com/assets/images/socomptoir.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "Janvier 2019",
   "black"
 );
 let tothetop = new Screen(
   "tothetop",
   "./assets/images/tothetop.png",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "Décembre 2018",
   "black"
 );
 let galbobain = new Screen(
   "galbobain",
   "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "Février 2019",
   "black"
 );
 let gallery = new Screen(
   "dessins et peintures",
   "https://kalani-marquand.netlify.com/assets/images/galbobain.jpg",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam",
+  "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
   "",
   "white"
 );
