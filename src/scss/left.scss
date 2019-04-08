@@ -1,52 +1,28 @@
 .contact {
-  display: flex;
-
-  &__link {
-    margin-right: 20px;
-    height: 150px;
+  margin-top: 3vh;
+  img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
   }
-
-  &__infos {
+  .infos {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
-    font-size: 18px;
-    max-width: 30vw;
-    margin-top: 12px;
-
-    & a {
-      opacity: 0.6;
-      text-decoration: none;
-      color: black;
-      transition: all 0.3s;
-      position: relative;
-
-      &:after {
-        content: "";
-        background: rgb(30, 76, 201);
-        position: absolute;
-        left: 0;
-        height: 1px;
-        width: 0;
-        bottom: -2px;
-        transition: all 0.5s ease-out;
-      }
-
-      &:hover:after {
-        width: 100%;
-      }
-
-      &:hover {
-        transform: scale(1.03);
-        color: rgb(30, 76, 201);
-        opacity: 1;
-      }
+  }
+  .info {
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 2vw;
+    &:nth-child(1) a {
+      top: 5px;
+      position: absolute;
     }
-    & a:nth-child(1) {
-      margin-bottom: 12px;
+    a {
+      color: darkgray;
+      text-decoration: none;
     }
   }
+
 }
 
 .middle {
