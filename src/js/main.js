@@ -217,7 +217,7 @@ if (isMobile.any()) {
     "https://kalani-marquand.netlify.com/assets/images/dassault.jpg",
     "<p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat luctus eleifend. Morbi sollicitudin, elit vitae imperdiet placerat, felis tellus congue quam</p>",
     "Novembre 2018",
-    "black"
+    "white"
   );
   let powerpoint = new Screen(
     "templating powerpoint",
