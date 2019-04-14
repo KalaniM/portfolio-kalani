@@ -1,0 +1,77 @@
+.right {
+  height: 100vh;
+}
+
+.right img:not(.arrow) {
+  width: 50vw;
+  display: block;
+}
+
+.right .gallery {
+  display: none;
+}
+
+.right .arrow {
+  position: fixed;
+  left: 52vw;
+  bottom: 3vh;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  z-index: 1;
+  -webkit-animation: jump 1s infinite alternate ease-in-out;
+          animation: jump 1s infinite alternate ease-in-out;
+}
+
+.right.gallery .background {
+  display: none;
+}
+
+.right.gallery .gallery {
+  display: block;
+}
+
+@-webkit-keyframes disAppear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disAppear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: scale(0.7) translateY(-20px);
+            transform: scale(0.7) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translateY(0);
+            transform: scale(0.7) translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: scale(0.7) translateY(-20px);
+            transform: scale(0.7) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: scale(0.7) translateY(0);
+            transform: scale(0.7) translateY(0);
+  }
+}
+
+.arrow.hidden {
+  -webkit-animation: disAppear .5s ease-in-out forwards;
+          animation: disAppear .5s ease-in-out forwards;
+}
+/*# sourceMappingURL=right.css.map */
